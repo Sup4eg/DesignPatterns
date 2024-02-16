@@ -58,10 +58,12 @@ namespace Generative {
   void ClientCode(const Creator& creator) {
 	cout << "Client: I'm not aware of the creator's class, but it still works.\n" << creator.SomeOperation() << endl;
   }
+
+  extern void testFactoryMethod() {
+	cout << "App: Launched with the ConcreteCreator1.\n";
+	ConcreateCreator1* creator = new ConcreateCreator1();
+	ClientCode(*creator);
+  }
+
 }
 
-extern void testFactoryMethod() {
-  cout << "App: Launched with the ConcreteCreator1.\n";
-  Generative::ConcreateCreator1* creator = new Generative::ConcreateCreator1();
-  Generative::ClientCode(*creator);
-}

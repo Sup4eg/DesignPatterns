@@ -1,6 +1,10 @@
-extern void testFactoryMethod();
+
+namespace Generative {
+  extern void testFactoryMethod();
+  extern void testAbstractFactory();
+}
 
 int main() {
-  testFactoryMethod();
+  Generative::testAbstractFactory();
   return 0;
 }
