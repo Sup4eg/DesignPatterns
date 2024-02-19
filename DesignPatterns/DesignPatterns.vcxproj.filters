@@ -39,5 +39,8 @@
     <ClCompile Include="Prototype.cpp">
       <Filter>Source Files\Generative</Filter>
     </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Source Files\Generative</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -132,6 +132,7 @@
     <ClCompile Include="DesignPatterns.cpp" />
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Prototype.cpp" />
+    <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
