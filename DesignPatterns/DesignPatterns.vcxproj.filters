@@ -33,5 +33,8 @@
     <ClCompile Include="AbstractFactory.cpp">
       <Filter>Source Files\Generative</Filter>
     </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>Source Files\Generative</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
