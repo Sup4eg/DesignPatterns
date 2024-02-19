@@ -3,9 +3,10 @@ namespace Generative {
   extern void testFactoryMethod();
   extern void testAbstractFactory();
   extern void testBuilder();
+  extern void testPrototype();
 }
 
 int main() {
-  Generative::testBuilder();
+  Generative::testPrototype();
   return 0;
 }

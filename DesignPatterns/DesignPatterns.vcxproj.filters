@@ -36,5 +36,8 @@
     <ClCompile Include="Builder.cpp">
       <Filter>Source Files\Generative</Filter>
     </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>Source Files\Generative</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
