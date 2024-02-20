@@ -9,9 +9,10 @@ namespace Generative {
 
 namespace Structural {
   extern void testAdapter();
+  extern void testDecorator();
 }
 
 int main() {
-  Structural::testAdapter();
+  Structural::testDecorator();
   return 0;
 }

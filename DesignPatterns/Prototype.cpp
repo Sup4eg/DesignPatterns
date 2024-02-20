@@ -31,27 +31,27 @@ namespace Generative {
 	}
   };
 
-  class ConcreatePrototype1 : public Prototype {
+  class ConcretePrototype1 : public Prototype {
   private:
-	float concreatePrototypeField1_;
+	float ConcretePrototypeField1_;
   public:
-	ConcreatePrototype1(string prototypeName, float concreatePrototypeField1) : Prototype(prototypeName), concreatePrototypeField1_(concreatePrototypeField1) {
+	ConcretePrototype1(string prototypeName, float ConcretePrototypeField1) : Prototype(prototypeName), ConcretePrototypeField1_(ConcretePrototypeField1) {
 	}
 
 	Prototype* clone() const {
-	  return new ConcreatePrototype1(*this);
+	  return new ConcretePrototype1(*this);
 	}
   };
 
-  class ConcreatePrototype2 : public Prototype {
+  class ConcretePrototype2 : public Prototype {
   private:
-	float concreatePrototypeField2_;
+	float ConcretePrototypeField2_;
   public:
-	ConcreatePrototype2(string prototypeName, float concreatePrototypeField2) : Prototype(prototypeName), concreatePrototypeField2_(concreatePrototypeField2) {
+	ConcretePrototype2(string prototypeName, float ConcretePrototypeField2) : Prototype(prototypeName), ConcretePrototypeField2_(ConcretePrototypeField2) {
 	}
 
 	Prototype* clone() const {
-	  return new ConcreatePrototype2(*this);
+	  return new ConcretePrototype2(*this);
 	}
   };
 
@@ -61,8 +61,8 @@ namespace Generative {
 
   public:
 	PrototypeFactory() {
-	  prototypes_[Type::PROTOTYPE_1] = new ConcreatePrototype1("PROTOTYPE_1", 50.f);
-	  prototypes_[Type::RPOTOTYPE_2] = new ConcreatePrototype2("PROTOTYPE_2", 60.f);
+	  prototypes_[Type::PROTOTYPE_1] = new ConcretePrototype1("PROTOTYPE_1", 50.f);
+	  prototypes_[Type::RPOTOTYPE_2] = new ConcretePrototype2("PROTOTYPE_2", 60.f);
 	}
 
 	~PrototypeFactory() {

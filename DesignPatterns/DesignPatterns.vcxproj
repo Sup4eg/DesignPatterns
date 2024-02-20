@@ -130,6 +130,7 @@
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="DesignPatterns.cpp" />
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Prototype.cpp" />

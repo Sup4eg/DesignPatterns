@@ -41,14 +41,14 @@ namespace Generative {
 	}
   };
 
-  class ConcreateCreator1 : public Creator {
+  class ConcreteCreator1 : public Creator {
   public:
 	Product* FactoryMethod() const override {
 	  return new ConcreteProduct1();
 	}
   };
 
-  class ConcreateCreator2 : public Creator {
+  class ConcreteCreator2 : public Creator {
   public:
 	Product* FactoryMethod() const override {
 	  return new ConcreteProduct2();
@@ -61,7 +61,7 @@ namespace Generative {
 
   extern void testFactoryMethod() {
 	cout << "App: Launched with the ConcreteCreator1.\n";
-	ConcreateCreator1* creator = new ConcreateCreator1();
+	ConcreteCreator1* creator = new ConcreteCreator1();
 	ClientCode(*creator);
   }
 

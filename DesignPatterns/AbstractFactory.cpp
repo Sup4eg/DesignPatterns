@@ -12,14 +12,14 @@ namespace Generative {
   };
 
 
-  class ConcreateProductA1 : public AbstractProductA {
+  class ConcreteProductA1 : public AbstractProductA {
   public:
 	std::string UsefulFunctionA() const override {
 	  return "The result of the product A1.";
 	}
   };
 
-  class ConcreateProductA2 : public AbstractProductA {
+  class ConcreteProductA2 : public AbstractProductA {
   public:
 	std::string UsefulFunctionA() const override {
 	  return "The result of the product A2.";
@@ -33,7 +33,7 @@ namespace Generative {
 	virtual std::string AnotherUsefulFunctionB(const AbstractProductA& collaborator) const = 0;
   };
 
-  class ConcreateProductB1 : public AbstractProductB {
+  class ConcreteProductB1 : public AbstractProductB {
   public:
 	std::string UsefulFunctionB() const override {
 	  return "The result of the product B1.";
@@ -45,7 +45,7 @@ namespace Generative {
 	}
   };
 
-  class ConcreateProductB2 : public AbstractProductB {
+  class ConcreteProductB2 : public AbstractProductB {
   public:
 	std::string UsefulFunctionB() const override {
 	  return "The result of the product B2.";
@@ -63,25 +63,25 @@ namespace Generative {
 	  virtual AbstractProductB* CreateProductB() const = 0;
   };
 
-  class ConcreateFactory1 : public AbstractFactory {
+  class ConcreteFactory1 : public AbstractFactory {
   public:
 	AbstractProductA* CreateProductA() const override {
-		  return new ConcreateProductA1();
+		  return new ConcreteProductA1();
 	  }
 
 	AbstractProductB* CreateProductB() const override {
-		  return new ConcreateProductB1();
+		  return new ConcreteProductB1();
 	  }
   };
 
-  class ConcreateFactory2 : public AbstractFactory {
+  class ConcreteFactory2 : public AbstractFactory {
   public:
 	AbstractProductA* CreateProductA() const override {
-		  return new ConcreateProductA2();
+		  return new ConcreteProductA2();
 	  }
 
 	AbstractProductB* CreateProductB() const override {
-		  return new ConcreateProductB2();
+		  return new ConcreteProductB2();
 	  }
   };
 
@@ -97,12 +97,12 @@ namespace Generative {
 
   extern void testAbstractFactory() {
     cout << "Client: Test client code with the first factory type:\n";
-    ConcreateFactory1* f1 = new ConcreateFactory1();
+    ConcreteFactory1* f1 = new ConcreteFactory1();
 	ClientCode(*f1);
 	delete f1;
 	cout << endl;
 	cout << "Client: Test client code with the second factory type:\n";
-	ConcreateFactory2* f2 = new ConcreateFactory2();
+	ConcreteFactory2* f2 = new ConcreteFactory2();
 	ClientCode(*f2);
 	delete f2;
   }
