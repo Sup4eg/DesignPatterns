@@ -42,5 +42,8 @@
     <ClCompile Include="Singleton.cpp">
       <Filter>Source Files\Generative</Filter>
     </ClCompile>
+    <ClCompile Include="Adapter.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

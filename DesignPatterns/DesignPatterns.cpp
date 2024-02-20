@@ -7,7 +7,11 @@ namespace Generative {
   extern void testSingleton();
 }
 
+namespace Structural {
+  extern void testAdapter();
+}
+
 int main() {
-  Generative::testSingleton();
+  Structural::testAdapter();
   return 0;
 }
