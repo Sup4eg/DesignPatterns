@@ -14,9 +14,10 @@ namespace Structural {
   extern void testFacade();
   extern void testProxy();
   extern void testFlyweight();
+  extern void testBridge();
 }
 
 int main() {
-  Structural::testFlyweight();
+  Structural::testBridge();
   return 0;
 }
