@@ -51,5 +51,11 @@
     <ClCompile Include="Facade.cpp">
       <Filter>Source Files\Structural</Filter>
     </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>Source Files\Structural</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
