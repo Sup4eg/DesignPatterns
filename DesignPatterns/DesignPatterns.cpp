@@ -8,6 +8,7 @@ namespace Generative {
   extern void testSingleton();
 }
 
+//7
 namespace Structural {
   extern void testAdapter();
   extern void testDecorator();
@@ -18,7 +19,11 @@ namespace Structural {
   extern void testComposite();
 }
 
+namespace Behavioral {
+  extern void testChainOfResponsibility();
+}
+
 int main() {
-  Structural::testComposite();
+  Behavioral::testChainOfResponsibility();
   return 0;
 }

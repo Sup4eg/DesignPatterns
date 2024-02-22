@@ -63,5 +63,8 @@
     <ClCompile Include="Composite.cpp">
       <Filter>Source Files\Structural</Filter>
     </ClCompile>
+    <ClCompile Include="ChainOfResponsibility.cpp">
+      <Filter>Source Files\Behavior</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
