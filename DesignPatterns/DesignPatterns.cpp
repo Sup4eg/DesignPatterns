@@ -21,9 +21,10 @@ namespace Structural {
 
 namespace Behavioral {
   extern void testChainOfResponsibility();
+  extern void testCommand();
 }
 
 int main() {
-  Behavioral::testChainOfResponsibility();
+  Behavioral::testCommand();
   return 0;
 }
