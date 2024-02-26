@@ -19,12 +19,13 @@ namespace Structural {
   extern void testComposite();
 }
 
-namespace Behavioral {
+namespace Behavior {
   extern void testChainOfResponsibility();
   extern void testCommand();
+  extern void testIterator();
 }
 
 int main() {
-  Behavioral::testCommand();
+  Behavior::testIterator();
   return 0;
 }

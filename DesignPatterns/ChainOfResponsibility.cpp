@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace Behavioral {
+namespace Behavior {
   
   class Handler {
   public:
