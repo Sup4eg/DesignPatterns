@@ -55,14 +55,14 @@ namespace Generative {
 	}
   };
 
-  void ClientCode(const Creator& creator) {
+  void ClientCodeFactoryMethod(const Creator& creator) {
 	cout << "Client: I'm not aware of the creator's class, but it still works.\n" << creator.SomeOperation() << endl;
   }
 
   extern void testFactoryMethod() {
 	cout << "App: Launched with the ConcreteCreator1.\n";
 	ConcreteCreator1* creator = new ConcreteCreator1();
-	ClientCode(*creator);
+	ClientCodeFactoryMethod(*creator);
   }
 
 }

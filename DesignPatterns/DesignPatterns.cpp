@@ -22,10 +22,11 @@ namespace Structural {
 namespace Behavior {
   extern void testChainOfResponsibility();
   extern void testCommand();
+  extern void testMediator();
   extern void testIterator();
 }
 
 int main() {
-  Behavior::testIterator();
+  Behavior::testMediator();
   return 0;
 }

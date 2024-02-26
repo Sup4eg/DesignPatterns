@@ -140,6 +140,7 @@
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Flyweight.cpp" />
     <ClCompile Include="Iterator.cpp" />
+    <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Proxy.cpp" />
     <ClCompile Include="Singleton.cpp" />

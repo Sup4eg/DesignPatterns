@@ -72,5 +72,8 @@
     <ClCompile Include="Iterator.cpp">
       <Filter>Source Files\Behavior</Filter>
     </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>Source Files\Behavior</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

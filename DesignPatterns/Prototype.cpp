@@ -75,7 +75,7 @@ namespace Generative {
 	}
   };
 
-  void client(PrototypeFactory& prototypeFactory) {
+  void clientPrototype(PrototypeFactory& prototypeFactory) {
 	cout << "Let's create a prototype 1" << endl;
 	Prototype* prototype = prototypeFactory.createPrototype(Type::PROTOTYPE_1);
 	prototype->method(90);
@@ -90,7 +90,7 @@ namespace Generative {
 
   extern void testPrototype() {
 	PrototypeFactory* prototypeFactory = new PrototypeFactory();
-	client(*prototypeFactory);
+	clientPrototype(*prototypeFactory);
 	delete prototypeFactory;
   }
 

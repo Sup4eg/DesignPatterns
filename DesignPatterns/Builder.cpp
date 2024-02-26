@@ -92,7 +92,7 @@ namespace Generative {
 	}
   };
 
-  void clientCode(Director& director) {
+  void clientCodeBuilder(Director& director) {
 	ConcreteBuilder1* builder = new ConcreteBuilder1();
 	director.setBuilder(builder);
 	cout << "Standard basic product:\n";
@@ -123,7 +123,7 @@ namespace Generative {
 
   extern void testBuilder() {
 	Director* director = new Director();
-	clientCode(*director);
+	clientCodeBuilder(*director);
 	delete director;
   }
 

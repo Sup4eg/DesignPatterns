@@ -54,7 +54,7 @@ namespace Structural {
 	}
   };
 
-  void clientCode(Facade* facade) {
+  void clientCodeFacade(Facade* facade) {
 	cout << facade->operation();
   }
 
@@ -62,7 +62,7 @@ namespace Structural {
 	Subsystem1* subsystem1 = new Subsystem1;
 	Subsystem2* subsystem2 = new Subsystem2;
 	Facade* facade = new Facade(subsystem1, subsystem2);
-	clientCode(facade);
+	clientCodeFacade(facade);
 	delete facade;
   }
 

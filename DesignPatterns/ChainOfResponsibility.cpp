@@ -5,7 +5,7 @@
 using namespace std;
 
 namespace Behavior {
-  
+
   class Handler {
   public:
 	virtual Handler* setNext(Handler* handler) = 0;
@@ -17,7 +17,7 @@ namespace Behavior {
 	Handler* nextHandler_;
   public:
 	AbstractHandler() : nextHandler_(nullptr) {}
-	
+
 	Handler* setNext(Handler* handler) override {
 	  this->nextHandler_ = handler;
 	  return handler;
@@ -67,7 +67,7 @@ namespace Behavior {
 	}
   };
 
-  void clientCode(Handler& handler) {
+  void clientCodeChainOfResponsibility(Handler& handler) {
 	vector<string> food = { "Nut", "Banana", "Cup of coffee" };
 	for (const string& f : food) {
 	  cout << "Client: Who wants a " << f << "?\n";
@@ -88,10 +88,10 @@ namespace Behavior {
 	monkey->setNext(squirrel)->setNext(dog);
 
 	cout << "Chain: Monkey > Squirrel > Dog\n\n";
-	clientCode(*monkey);
+	clientCodeChainOfResponsibility(*monkey);
 	cout << "\n";
 	cout << "Subchain: Squirrel > Dog\n\n";
-	clientCode(*squirrel);
+	clientCodeChainOfResponsibility(*squirrel);
 
 	delete monkey;
 	delete squirrel;

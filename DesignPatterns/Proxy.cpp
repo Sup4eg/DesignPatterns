@@ -46,19 +46,19 @@ namespace Structural {
 	}
   };
 
-  void clientCode(const Subject& subject) {
+  void clientCodeProxy(const Subject& subject) {
 	subject.request();
   }
 
   extern void testProxy() {
 	cout << "Client: Executing the client code with a real subject:\n";
 	RealSubject* realSubject = new RealSubject;
-	clientCode(*realSubject);
+	clientCodeProxy(*realSubject);
 
 	cout << "\n";
 	cout << "Client: Executing the same client code with a proxy:\n";
 	Proxy* proxy = new Proxy(realSubject);
-	clientCode(*proxy);
+	clientCodeProxy(*proxy);
 
 	delete realSubject;
 	delete proxy;

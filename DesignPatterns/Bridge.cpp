@@ -48,14 +48,14 @@ namespace Structural {
 	  }
   };
 
-  void clientCode(const Abstraction& abstraction) {
+  void clientCodeBridge(const Abstraction& abstraction) {
 	cout << abstraction.operation();
   }
 
   extern void testBridge() {
 	Implementation* implementation = new ConcreteImplementationA;
 	Abstraction* abstraction = new Abstraction(implementation);
-	clientCode(*abstraction);
+	clientCodeBridge(*abstraction);
 	cout << endl;
 
 	delete implementation;
@@ -63,7 +63,7 @@ namespace Structural {
 
 	implementation = new ConcreteImplementationB;
 	abstraction = new ExtendedAbstraction(implementation);
-	clientCode(*abstraction);
+	clientCodeBridge(*abstraction);
 
 	delete implementation;
 	delete abstraction;

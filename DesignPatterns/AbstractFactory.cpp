@@ -85,7 +85,7 @@ namespace Generative {
 	  }
   };
 
-  void ClientCode(const AbstractFactory& factory) {
+  void ClientCodeAbstractFactory(const AbstractFactory& factory) {
 	  const AbstractProductA* productA = factory.CreateProductA();
 	  const AbstractProductB* productB = factory.CreateProductB();
 	  cout << productB->UsefulFunctionB() << endl;
@@ -98,12 +98,12 @@ namespace Generative {
   extern void testAbstractFactory() {
     cout << "Client: Test client code with the first factory type:\n";
     ConcreteFactory1* f1 = new ConcreteFactory1();
-	ClientCode(*f1);
+	ClientCodeAbstractFactory(*f1);
 	delete f1;
 	cout << endl;
 	cout << "Client: Test client code with the second factory type:\n";
 	ConcreteFactory2* f2 = new ConcreteFactory2();
-	ClientCode(*f2);
+	ClientCodeAbstractFactory(*f2);
 	delete f2;
   }
 

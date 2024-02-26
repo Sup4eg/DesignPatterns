@@ -33,14 +33,14 @@ namespace Structural {
 	}
   };
 
-  void clientCode(const Target* target) {
+  void clientCodeAdapter(const Target* target) {
 	cout << target->request();
   }
 
   extern void testAdapter() {
 	cout << "Client: I can work just fine with the Target objects:\n";
 	Target* target = new Target;
-	clientCode(target);
+	clientCodeAdapter(target);
 	cout << "\n\n";
 
 	Adaptee* adaptee = new Adaptee;
@@ -49,7 +49,7 @@ namespace Structural {
 	cout << "\n\n";
 	cout << "Client: But I can work with it via the Adapter:\n";
 	Adapter* adapter = new Adapter(adaptee);
-	clientCode(adapter);
+	clientCodeAdapter(adapter);
 	cout << "\n";
 
 	delete target;

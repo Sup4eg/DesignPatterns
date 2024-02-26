@@ -8,7 +8,7 @@ namespace Behavior {
 
   template<typename T, typename U>
   class Iterator {
-  
+
   public:
 	typedef typename vector<T>::iterator iter_type;
 
@@ -41,7 +41,7 @@ namespace Behavior {
   template <class T>
   class Container {
 	friend class Iterator<T, Container>;
-	
+
   private:
 	vector<T> m_data_;
 
@@ -70,7 +70,8 @@ namespace Behavior {
 	}
   };
 
-  void clientCode() {
+
+  void clientCodeIterator() {
 	cout << "____________Iterator with int____________" << endl;
 	Container<int> cont;
 
@@ -100,8 +101,9 @@ namespace Behavior {
 
   }
 
+
   extern void testIterator() {
-	clientCode();
+	clientCodeIterator();
   }
 
 }

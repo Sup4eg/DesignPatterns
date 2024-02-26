@@ -43,20 +43,20 @@ namespace Structural {
 	}
   };
 
-  void clientCode(Component* component) {
+  void clientCodeDecorator(Component* component) {
 	cout << "RESULT: " << component->operation();
   }
 
   extern void testDecorator() {
 	Component* simple = new ConcreteComponent;
 	cout << "Client: I've got a simple component:\n";
-	clientCode(simple);
+	clientCodeDecorator(simple);
 	cout<< "\n\n";
 
 	Component* decorator1 = new ConcreteDecoratorA(simple);
 	Component* decorator2 = new ConcreteDecoratorB(decorator1);
 	cout << "Client: Now I've got a decorated component:\n";
-	clientCode(decorator2);
+	clientCodeDecorator(decorator2);
 	cout << endl;
 
 	delete simple;
