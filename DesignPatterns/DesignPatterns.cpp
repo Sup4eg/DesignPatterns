@@ -24,9 +24,10 @@ namespace Behavior {
   extern void testCommand();
   extern void testMediator();
   extern void testIterator();
+  extern void testMemento();
 }
 
 int main() {
-  Behavior::testMediator();
+  Behavior::testMemento();
   return 0;
 }
