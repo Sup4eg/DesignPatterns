@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-namespace Behavior {
+namespace Behavioral {
   class Command {
   public:
 	virtual ~Command() {}

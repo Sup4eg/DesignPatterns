@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace Behavior {
+namespace Behavioral {
 
   template<typename T, typename U>
   class Iterator {

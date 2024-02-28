@@ -5,7 +5,7 @@
 #include <vector>
 
 using namespace std;
-namespace Behavior {
+namespace Behavioral {
   class Memento {
   public:
 	virtual ~Memento() {}

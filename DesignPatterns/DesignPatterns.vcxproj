@@ -142,9 +142,11 @@
     <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Memento.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Proxy.cpp" />
     <ClCompile Include="Singleton.cpp" />
+    <ClCompile Include="State.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
