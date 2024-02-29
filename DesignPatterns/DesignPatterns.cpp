@@ -28,9 +28,10 @@ namespace Behavioral {
   extern void testObserver();
   extern void testState();
   extern void testStrategy();
+  extern void testTemplateMethod();
 }
 
 int main() {
-  Behavioral::testStrategy();
+  Behavioral::testTemplateMethod();
   return 0;
 }
