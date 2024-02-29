@@ -16,11 +16,11 @@
     <Filter Include="Source Files\Generative">
       <UniqueIdentifier>{f00233dc-a4f1-4165-a725-17947fe2718c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Behavior">
-      <UniqueIdentifier>{ed431a4f-72c6-41aa-8a60-498f4a43e45f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Structural">
       <UniqueIdentifier>{85cc5c1b-a009-415e-8272-f4eee62ca32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behavioral">
+      <UniqueIdentifier>{ed431a4f-72c6-41aa-8a60-498f4a43e45f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,25 +64,28 @@
       <Filter>Source Files\Structural</Filter>
     </ClCompile>
     <ClCompile Include="ChainOfResponsibility.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="Command.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="Iterator.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="Mediator.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="Memento.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="Observer.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
     <ClCompile Include="State.cpp">
-      <Filter>Source Files\Behavior</Filter>
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
