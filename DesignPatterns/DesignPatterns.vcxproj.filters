@@ -90,5 +90,8 @@
     <ClCompile Include="TemplateMethod.cpp">
       <Filter>Source Files\Behavioral</Filter>
     </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

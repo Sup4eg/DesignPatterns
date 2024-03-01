@@ -19,6 +19,8 @@ namespace Structural {
   extern void testComposite();
 }
 
+
+//10
 namespace Behavioral {
   extern void testChainOfResponsibility();
   extern void testCommand();
@@ -29,9 +31,10 @@ namespace Behavioral {
   extern void testState();
   extern void testStrategy();
   extern void testTemplateMethod();
+  extern void testVisitor();
 }
 
 int main() {
-  Behavioral::testTemplateMethod();
+  Behavioral::testVisitor();
   return 0;
 }
