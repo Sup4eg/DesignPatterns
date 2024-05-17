@@ -132,6 +132,7 @@
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="ByteCode.cpp" />
     <ClCompile Include="ChainOfResponsibility.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Composite.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Flyweight.cpp" />
+    <ClCompile Include="Interpreter.cpp" />
     <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Memento.cpp" />

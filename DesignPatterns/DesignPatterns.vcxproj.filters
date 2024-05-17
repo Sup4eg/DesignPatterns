@@ -22,6 +22,12 @@
     <Filter Include="Source Files\Behavioral">
       <UniqueIdentifier>{ed431a4f-72c6-41aa-8a60-498f4a43e45f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameDev">
+      <UniqueIdentifier>{d18e296b-f294-4925-987d-79f2251caba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameDev\ByteCode">
+      <UniqueIdentifier>{e456defe-5550-49f9-9381-a397800d1956}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FactoryMethod.cpp">
@@ -92,6 +98,12 @@
     </ClCompile>
     <ClCompile Include="Visitor.cpp">
       <Filter>Source Files\Behavioral</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpreter.cpp">
+      <Filter>Source Files\GameDev\ByteCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteCode.cpp">
+      <Filter>Source Files\GameDev\ByteCode</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
