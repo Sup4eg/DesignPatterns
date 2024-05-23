@@ -130,6 +130,9 @@
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="Adapter.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ServiceLocator.cpp" />
+    <ClCompile Include="TypeObject.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
     <ClCompile Include="ByteCode.cpp" />

@@ -28,6 +28,12 @@
     <Filter Include="Source Files\GameDev\ByteCode">
       <UniqueIdentifier>{e456defe-5550-49f9-9381-a397800d1956}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameDev\TypeObject">
+      <UniqueIdentifier>{5891eba9-8f4c-4179-b55e-3f9987663be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameDev\ServiceLocator">
+      <UniqueIdentifier>{58633fc6-c29a-43fe-af9a-af90664815ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FactoryMethod.cpp">
@@ -104,6 +110,15 @@
     </ClCompile>
     <ClCompile Include="ByteCode.cpp">
       <Filter>Source Files\GameDev\ByteCode</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeObject.cpp">
+      <Filter>Source Files\GameDev\TypeObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Source Files\GameDev</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLocator.cpp">
+      <Filter>Source Files\GameDev\ServiceLocator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
