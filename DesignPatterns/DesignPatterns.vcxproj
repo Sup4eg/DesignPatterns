@@ -131,7 +131,11 @@
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ContiguousArrays.cpp" />
+    <ClCompile Include="HotColdSplitting.cpp" />
+    <ClCompile Include="PackedData.cpp" />
     <ClCompile Include="ServiceLocator.cpp" />
+    <ClCompile Include="SpatialPartition.cpp" />
     <ClCompile Include="TypeObject.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />

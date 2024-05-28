@@ -93,5 +93,4 @@ NullAudio Locator::nullService_;
 
 void enableAudioLogging() {
   Locator::provide(new LoggedAudio(Locator::getAudio()));
-  
 }
