@@ -40,6 +40,9 @@
     <Filter Include="Source Files\GameDev\SpatialPartition">
       <UniqueIdentifier>{21694c86-869b-4337-86c3-1c1981174c1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameDev\ObjectPool">
+      <UniqueIdentifier>{882d423c-82f1-45d5-8939-dc78b3021d28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FactoryMethod.cpp">
@@ -137,6 +140,9 @@
     </ClCompile>
     <ClCompile Include="SpatialPartition.cpp">
       <Filter>Source Files\GameDev\SpatialPartition</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPool.cpp">
+      <Filter>Source Files\GameDev\ObjectPool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

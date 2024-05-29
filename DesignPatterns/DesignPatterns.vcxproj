@@ -133,6 +133,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="ContiguousArrays.cpp" />
     <ClCompile Include="HotColdSplitting.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
     <ClCompile Include="PackedData.cpp" />
     <ClCompile Include="ServiceLocator.cpp" />
     <ClCompile Include="SpatialPartition.cpp" />
